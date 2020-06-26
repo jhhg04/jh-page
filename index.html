@@ -1,176 +1,257 @@
 <!DOCTYPE html>
-<html lang="es">
-
+<html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <title>John Herrera</title>
-  <link rel="icon" type="image/png" href="./img/favicon.png">
-  <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Source+Sans+Pro&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
-  <link rel="stylesheet" href="./css/style.css">
+
+     <title>John's Resume - Profile Page</title>
+     <link rel="icon" type="image/png" href="./images/favicon.png">
+
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+     <meta name="description" content="">
+     <meta name="keywords" content="">
+     <meta name="author" content="Tooplate">
+     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+     <link rel="stylesheet" href="css/bootstrap.min.css">
+     <link rel="stylesheet" href="css/all.min.css">
+     <link rel="stylesheet" href="css/owl.carousel.min.css">
+     <link rel="stylesheet" href="css/owl.theme.default.min.css">
+     <!-- MAIN CSS -->
+     <link rel="stylesheet" href="css/tooplate-ben-resume-style.css">
 </head>
 
-<body>
-  <header class="header">
-    <div class="container">
-      <figure class="logo">
-        <img src="./img/logo2.png" height="50" alt="logo de http://johnherrera.com">
-      </figure>
-      <nav class="menu">
-        <ol>
-          <li>
-            <a class="link" href="#portafolio">Servicios</a>
-          </li>
-          <li>
-            <a class="link" href="#eventos">Experiencia</a>
-          </li>
-          <li>
-            <a class="link" href="#contacto">Trabajemos Juntos</a>
-          </li>
-        </ol>
-      </nav>
-    </div>
-  </header>
-  <section class="hero">
-    <div class="container">
-      <h1>
-        Hola! Soy <strong>John</strong> <br> Desarrollador <strong>JavaScript</strong> <br>con  pasion por la
-        <strong>Tecnologia</strong>
-      </h1>
-      <img class="hero-image" src="./img/1c.jpg" width="500" height="300" alt="img"/>
-    </div>
-  </section>
-  <section id="portafolio" class="portfolio">
-    <div class="container">
-      <h2>Desarrollo Web</h2>
-      <article class="project">
-        <div class="project-details">
-          <h3 class="project-title">Posicionamiento SEO</h3>
-          <p class="project-description">Hacemos que tu empresa salga de primera en los buscadores, esto es una ventaja primordial a la hora de que los clientes accedan a su página, es de vital importancia ser el primero en los resultados de las búsquedas
-          </p>
-        </div>
-        <figure class="project-imageContainer">
-          <img class="project-image" src="./img/6c.jpg" alt="Proyecto del curso React Native"
-            width="500">
-        </figure>
-      </article>
-      <article class="project">
-        <div class="project-details">
-          <h3 class="project-title">Diseño de Primera</h3>
-          <p class="project-description">Implementamos la mejor presentación, porqué sabemos lo importante qué es la imagen de tu empresa.
-          </p>
-        </div>
-        <figure class="project-imageContainer">
-          <img class="project-image" src="./img/7c.jpg" alt="Proyecto del curso React Native"
-            width="500">
-        </figure>
-      </article>
-      <article class="project">
-        <div class="project-details">
-          <h3 class="project-title">Diseño Adaptable (Responsive)</h3>
-          <p class="project-description">Pagina web adaptable a cualquier dispositivo, para que tu empresa este en todos los mercados.
-          </p>
-        </div>
-        <figure class="project-imageContainer">
-          <img class="project-image" src="./img/8c.jpg" alt="Proyecto del curso React Native"
-            width="500">
-        </figure>
-      </article>
-      <article class="project">
-        <div class="project-details">
-          <h3 class="project-title">Manejo de redes sociales (Community Manager)</h3>
-          <p class="project-description">Hacemos seguimiento de tus redes sociales, haciendo crecer tu comunidad, adquiriendo nuevos clientes, y aumentando el alcance de tus productos.
-          </p>
-        </div>
-        <figure class="project-imageContainer">
-          <img class="project-image" src="./img/9c.jpg" alt="Proyecto del curso React Native"
-            width="500">
-        </figure>
-      </article>
-    </div>  
-  </section>
-  <div class="container">
-    <h2 class="event-list-title">Mi Experiencia</h2>
-  </div>
-  <section id="eventos" class="event-list">
-    <div class="container">
-      <article class="event">
-        <figure class="event-imageContainer">
-          <img class="event-image" src="./img/12c.jpg" width="500" />
-        </figure>
-        <div class="event-detail">
-          <h3 class="event-title">Administración de páginas web</h3>
-          <p class="event-description">Optimizar y administrar su página web, y daremos respuesta a sus necesidades en 24 horas o menos. Esto les garantizará:
-            Mantener su página web actualizado con contenido de interés y de importancia enfocándose en su estrategia de marketing digital.
-          </p>
-        </div>
-      </article>
-      <article class="event">
-        <figure class="event-imageContainer">
-          <img class="event-image" src="./img/13c.jpg" width="500" />
-        </figure>
-        <div class="event-detail">
-          <h3 class="event-title">Nuevas tecnologías de desarrollo web</h3>
-          <p class="event-description">Conocimientos en las nuevas tecnologías de desarrollo web: HTML5, CSS3, JavaScript.
+<body data-spy="scroll" data-target="#navbarNav" data-offset="50">
 
-            Entiendo que cada proyecto es único y por ello se analizan las necesidades, observamos a su competencia cuáles son sus debilidades en su sitio web y las convertimos en fortalezas para usted.
-          </p>
+    <!-- MENU BAR -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+
+            <a class="navbar-brand" href="#">
+                John Resume
+            </a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a href="#intro" class="nav-link smoothScroll">Introduction</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#about" class="nav-link smoothScroll">About Me</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#testimonials" class="nav-link smoothScroll">Experience</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#contact" class="nav-link smoothScroll">Contact</a>
+                    </li>
+                </ul>
+            </div>
+
         </div>
-      </article>
-      <article class="event">
-        <figure class="event-imageContainer">
-          <img class="event-image" src="./img/14c.jpg" width="500" />
-        </figure>
-        <div class="event-detail">
-          <h3 class="event-title">Diseño web adaptable</h3>
-          <p class="event-description">Sabías que diariamente se venden más Smartphone y tabletas que computadores? y que las conexiones para móviles superaran esté año las conexiones fijas? por eso recomiendo tener una buena página web adaptada para múltiples dispositivos móviles.
-          </p>
+    </nav>
+
+
+    <!-- HERO -->
+    <section class="hero d-flex flex-column justify-content-center align-items-center" id="intro">
+
+         <div class="container">
+            <div class="row">
+
+                  <div class="mx-auto col-lg-5 col-md-5 col-10 mt-5">
+                      <img src="images/john.jpg" class="about-image img-fluid" alt="John Resume HTML Template">
+                  </div>
+
+                   <div class="d-flex flex-column justify-content-center align-items-center col-lg-7 col-md-7 col-12">
+                        <div class="hero-text">
+
+                            <h1 class="hero-title">👋 John Web Developer</h1>
+
+                            <a href="#" class="email-link">
+                                jhhg04@gmail.com
+                            </a>
+                          
+                        </div>
+                    </div>
+
+            </div>
         </div>
-      </article>
-      <article class="event">
-        <figure class="event-imageContainer">
-          <img class="event-image" src="./img/11c.jpg" width="500" />
-        </figure>
-        <div class="event-detail">
-          <h3 class="event-title">DISEÑO EN WORDPRESS</h3>
-          <p class="event-description">El diseño de una página web basada en WordPress no tiene por qué tener un estilo especial ni verse limitado en ningún sentido por el sistema que está detrás. Puede ser un blog, una web personal o profesional para una pequeña o gran empresa, un sitio de comercio electrónico… Casi cualquier perfil puede encajar con este gestor de contenidos.
-          </p>
+    </section>
+
+
+    <section class="about section-padding" id="about">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-lg-6 col-md-6 col-12">
+                    <h3 class="mb-4">This is John's Resume</h3>
+
+                    <p>Hi, I'm a creative developer with a passion for emerging technologies. I have 5 years experience building web experiences for an array of audiences and purposes.</p>
+
+                    <p>I offer an outstanding suite of services to meet even the most demanding business requests. I pride myself on providing excellent customer service and development through clear and direct communication.</p>
+
+                    <p> My goal is to understand your business needs, provide an elegant solution and foster a relationship that allows you to realize your business goals</p>
+
+                </div>
+
+                <div class="col-lg-5 mx-auto col-md-6 col-12">
+                    <img src="images/true-agency.jpg" class="about-image img-fluid" alt="Ben's Resume HTML Template">
+                </div>
+
+            </div>
+            <div class="row about-third">
+            	<div class="col-lg-4 col-md-4 col-12">
+                <img src="images/web-vitals.svg" class="about-image img-fluid" alt="Ben's Resume HTML Template">
+                <h3>Web Vitals</h3>
+                <p>Optimizing for quality of user experience is key to the long-term success of any site on the web. Whether you're a business owner, marketer, or developer, Web Vitals can help you quantify the experience of your site and identify opportunities to improve.</p>
+                </div>
+                <div class="col-lg-4 col-md-4 col-12">
+                <img src="images/pwa.svg" class="about-image img-fluid" alt="Ben's Resume HTML Template">
+                <h3>Progressive Web Apps</h3>
+                <p>In this collection, you'll learn what makes a Progressive Web App special, how they can affect your business, and how to build them.</p>
+                </div>
+                <div class="col-lg-4 col-md-4 col-12">
+                <img src="images/accessible.svg" class="about-image img-fluid" alt="Ben's Resume HTML Template">
+                <h3>Accessible to all</h3>
+                <p>All users should be able to access your content. In this section you'll learn how to provide a robust experience to your users that accounts for their context and any situational, temporary, or permanent disabilities.</p>
+                </div>
+            </div>
         </div>
-      </article>
-    </div>  
-  </section>
-  <section id="contacto" class="contact">
-    <div class="container contact">
-      <form action="/suscripcion/" class="form-email">
-        <h3>Creamos algo Juntos?</h3>
-        <input type="text" placeholder="Dejame tu email" id="email">
-        <button>Enviar</button>
-      </form>
-      <div class="social">
-        <a href="http://twitter.com/jhhg004" class="social-link twitter"></a>
-        <a href="http://facebook.com/jhhg04" class="social-link facebook"></a>
-        <a href="http://github.com/jhhg04" class="social-link github"></a>
-        <a href="http://instagram.com/jhhg004" class="social-link instagram"></a>
+    </section>
+
+
+    <!-- TESTIMONIAL -->
+     <section class="testimonials section-padding" id="testimonials">
+          <div class="container">
+               <div class="row">
+
+                    <div class="col-12">
+                        <h3 class="mb-5 text-center">My Experience</h3>
+
+                        <div class="owl-carousel owl-theme" id="testimonials-carousel">
+                            <div class="item">
+                                <div class="testimonials-thumb d-flex">
+                                    <div class="testimonials-image">
+                                        <img src="images/fast.svg" class="img-fluid" alt="testimonials image">
+                                    </div>
+
+                                    <div class="testimonials-info">
+                                        <p>Guarantee your site loads quickly to avoid user drop off.</p>
+
+                                        <h6 class="mb-0">Fast load times</h6>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="item">
+                                <div class="testimonials-thumb d-flex">
+                                    <div class="testimonials-image">
+                                        <img src="images/reliable.svg" class="img-fluid" alt="testimonials image">
+                                    </div>
+
+                                    <div class="testimonials-info">
+                                        <p>See consistent, reliable performance regardless of network quality.</p>
+
+                                        <h6 class="mb-0">Network reliability</h6>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="item">
+                                <div class="testimonials-thumb d-flex">
+                                    <div class="testimonials-image">
+                                        <img src="images/secure.svg" class="img-fluid" alt="testimonials image">
+                                    </div>
+
+                                    <div class="testimonials-info">
+                                        <p>Ensure your site and your users' data is secure..</p>
+
+                                        <h6 class="mb-0">Safe and secure</h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+               </div>
+          </div>
+     </section>
+
+
+     <!-- FAQ -->
+     <section class="faq section-padding">
+        
+      
+    </section>
+
+
+     <section class="contact section-padding pt-0" id="contact">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-6 col-md-6 col-12">
+            <form action="#" method="get" class="contact-form webform"  role="form">
+                
+                <div class="form-group d-flex flex-column-reverse">
+                    <input type="text" class="form-control" name="cf-name" id="cf-name" placeholder="Your Name">
+
+                    <label for="cf-name" class="webform-label">Full Name</label>
+                </div>
+
+                <div class="form-group d-flex flex-column-reverse">
+                    <input type="email" class="form-control" name="cf-email" id="cf-email" placeholder="Your Email">
+
+                    <label for="cf-email" class="webform-label">Your Email</label>
+                </div>
+
+                <div class="form-group d-flex flex-column-reverse">
+                    <textarea class="form-control" rows="5" name="cf-message" id="cf-message" placeholder="Your Message"></textarea>
+
+                    <label for="cf-message" class="webform-label">Message</label>
+                </div>
+
+                <button type="submit" class="form-control" id="submit-button" name="submit">Send</button>
+            </form>
+          </div>
+
+            <div class="mx-auto col-lg-4 col-md-6 col-12">
+                <h3 class="my-4 pt-4 pt-lg-0">Say hello</h3>
+
+                <p class="mb-1">Bogota - Colombia</p>
+
+                <p>
+                    <a href="#">
+                        jhhg04@gmail.com
+                    <i class="fas fa-arrow-right custom-icon"></i>
+                    </a>
+                </p>
+
+                <ul class="social-links mt-2">
+                    <li><a href="https://www.linkedin.com/in/jhhg04" rel="noopener" class="fab fa-facebook"></a></li>
+                    <li><a href="#" rel="noopener" class="fab fa-twitter"></a></li>
+                    <li><a href="#" rel="noopener" class="fab fa-instagram"></a></li>
+                    <li><a href="https://www.linkedin.com/in/jhhg04" rel="noopener" class="fab fa-linkedin"></a></li>
+                    <li><a href="#" rel="noopener" class="fab fa-youtube"></a></li>
+                </ul>
+                
+            </div>
+
+        </div>
       </div>
-    </div>  
-  </section>
-  <footer class="footer">
-    <div class="container">
-      <div>
-        <p>
-          Contacto <br/>
-          <i class="fa fa-envelope"></i>
-          jhhg04@gmail.com
-        </p>
-      </div>
-      <div>
-        <p>
-          <i class="fa fa-search"></i>
-          <span>Visitame </span>
-          Bogotá - Colombia
-        </p>
-      </div>
-  </div>
-  </footer>
+    </section>
+     <!-- SCRIPTS -->
+     <script src="js/jquery.min.js"></script>
+     <script src="js/bootstrap.min.js"></script>
+     <script src="js/smoothscroll.js"></script>
+     <script src="js/owl.carousel.min.js"></script>
+     <script src="js/custom.js"></script>
+
 </body>
 </html>
